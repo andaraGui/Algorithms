@@ -1,0 +1,1 @@
+var input = require('fs').readFileSync('URI_1041_stdin', 'utf8');
