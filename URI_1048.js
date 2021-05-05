@@ -47,6 +47,6 @@ if(salary <= 400){
     var percent = readjustmentRate[4] * 100;
 }
 salary += readjustment;
-console.log('Novo salário: ' + salary.toFixed(2));
+console.log('Novo salario: ' + salary.toFixed(2));
 console.log('Reajuste ganho: ' + readjustment.toFixed(2));
-console.log('Em percentual: ' + percent + ' %');
+console.log('Em percentual: ' + percent.toFixed(0) + ' %');

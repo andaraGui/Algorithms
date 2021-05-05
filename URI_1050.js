@@ -16,14 +16,14 @@ Print the city name corresponding to the input DDD. Print DDD nao cadastrado if 
 */
 var input = require('fs').readFileSync('URI_1050_stdin', 'utf8');
 var ddd = parseInt(input.split('\n'));
-switch(ddd){
-    case 61: var cidade = "Brasilia"; break;
-    case 71: var cidade = "Salvador"; break;
-    case 11: var cidade = "Sao Paulo"; break;
-    case 21: var cidade = "Rio de Janeiro" ; break;
-    case 32: var cidade = "Juiz de Fora" ; break;
-    case 19: var cidade = "Campinas" ; break;
-    case 27: var cidade = "Vitoria" ; break;
-    case 31: var cidade = "Belo Horizonte" ; break;
+switch (ddd) {
+    case 61: var cidade = "Brasilia"; console.log(cidade); break;
+    case 71: var cidade = "Salvador"; console.log(cidade); break;
+    case 11: var cidade = "Sao Paulo"; console.log(cidade); break;
+    case 21: var cidade = "Rio de Janeiro"; console.log(cidade); break;
+    case 32: var cidade = "Juiz de Fora"; console.log(cidade); break;
+    case 19: var cidade = "Campinas"; console.log(cidade); break;
+    case 27: var cidade = "Vitoria"; console.log(cidade); break;
+    case 31: var cidade = "Belo Horizonte"; console.log(cidade); break;
+    default: console.log('DDD nao cadastrado');
 }
-console.log(cidade)
