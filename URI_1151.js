@@ -18,6 +18,11 @@ for (let x = 0; x < inputNumber; x++) {
     } else {
         resArray[x] = resArray[(x -1)] + resArray[(x - 2)]
     }
-    resLine +=resArray[x] + ' ';
+    if(x === inputNumber -1){
+        resLine +=resArray[x];
+    }else{
+     resLine +=resArray[x] + ' ';   
+    }
+    
 }
 console.log(resLine)
