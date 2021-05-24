@@ -32,7 +32,7 @@ for (let i = 0; i < 12; i++) {
 if(operator == 'S'){//Change for 'S\r' to test on nodeJS.
     console.log(sum.toFixed(1))
 }else if(operator == 'M'){//Change for 'M\r' to test on nodeJS.
-    let media = sum / 12;
+    const media = sum / 12;
     console.log(media.toFixed(1))
 }
 
