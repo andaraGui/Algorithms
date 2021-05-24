@@ -26,12 +26,12 @@ Print the calculated result (sum or average), with one digit after the decimal p
 */
 
 //This code will only work on URI Judge website,   to work on nodeJS you will need to change the if condition to get output
-const input = require('fs').readFileSync('URI_1181_stdin', 'utf8');
+const input = require('fs').readFileSync('URI_1183_stdin', 'utf8');
 const inputLines = input.split('\n');
 
-const lineToOperate = parseInt(inputLines.shift())
 const operator = inputLines.shift();
 
+let count = 0;
 let lines = []
 let sum = 0;
 
@@ -40,17 +40,19 @@ for(let i = 0 ; i < 12; i ++){
     for(let x = 0 ; x < 12 ; x++){
         lines[i][x] = Number(inputLines.shift());
     }
-    console.log(lines[i])
 }
 
-for(let i = 0 ; i < 12 ; i++){
-    sum+= lines[lineToOperate][i];
+for(i = 1 ; i < 12 ; i++){
+    for(x = 0 ; x < i; x++){
+        sum+=lines[x][i]
+        count++;
+    }
 }
 
-if(operator == 'S\r'){//Change to 'S\r' to test on nodeJS.
+if(operator == 'S'){//Change to 'S\r' to test on nodeJS.
     console.log(sum.toFixed(1))
-}else if(operator == 'M\r'){//Change to 'M\r' to test on nodeJS.
-    const media = sum / 12;
+}else if(operator == 'M'){//Change to 'M\r' to test on nodeJS.
+    const media = sum / count;
     console.log(media.toFixed(1))
 }
 
