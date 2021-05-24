@@ -16,6 +16,7 @@ const input = require('fs').readFileSync('URI_1181_stdin', 'utf8');
 const inputLines = input.split('\n');
 const LineToOperate = parseInt(inputLines.shift());
 const operator = inputLines.shift();
+
 let line = [];
 let sum = 0;
 
