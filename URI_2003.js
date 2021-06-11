@@ -17,16 +17,16 @@ const inputLines = input.split('\n');
 const terminalTime = 8;
 
 do{
-    
+   
     const [ hour , min ] = inputLines.shift().split(':').map(Number);
-
-     if( hour <= 6 || (hour === 7 & min === 0)){
+    if(typeof hour === 'number' & typeof min === 'number'){
+        if( hour <= 6 || (hour === 7 & min === 0)){
         console.log('Atraso maximo: 0');
-    }else{ 
+        }else{ 
         
         const lateMin = ((hour + 1) - terminalTime) * 60 + min;
         console.log('Atraso maximo: ' + lateMin);
    
+        }
     }
-
 }while(inputLines.length > 0);
