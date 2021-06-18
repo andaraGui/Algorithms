@@ -9,16 +9,14 @@ for(let  i = 0 ; i < buildingFloors ; i++){
 
     for(let j = 0 ; j < buildingFloors ; j++){
         if(j !== i){
-            
+
             let floorsDiference = j - i;
             if(floorsDiference < 0){
                 floorsDiference = -floorsDiference;
             }
-
             minsExpendArray[i] += employeesByFloor[j] * 2 * floorsDiference; 
         }
     }
 }  
-minsExpendArray = minsExpendArray.sort((a, b) => a - b)
-console.log(minsExpendArray[0])
-
+minsEnxpedArray = minsExpendArray.sort((a, b) => a - b)
+console.log(minsExpendArray[0]);
