@@ -28,13 +28,13 @@ do{
             
         let modifier = 0;
             if(type == 'twoDot'){
-                modifier = lineToConvertSplited.length - 1
+                modifier = lineToConvertSplited.length - 1;
             }else
             if(type == 'oneDot'){
                 modifier = lineToConvertSplited.length - 2;
             }
 
-            console.log(letters[positionInAlphabet + modifier])    
+            console.log(letters[positionInAlphabet + modifier]); 
     }
 
 

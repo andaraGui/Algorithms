@@ -18,5 +18,5 @@ for(let  i = 0 ; i < buildingFloors ; i++){
         }
     }
 }  
-minsEnxpedArray = minsExpendArray.sort((a, b) => a - b)
+minsEnxpedArray = minsExpendArray.sort((a, b) => a - b);
 console.log(minsExpendArray[0]);
