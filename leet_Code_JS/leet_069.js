@@ -1,5 +1,6 @@
 
 let x = 1;
+
 var mySqrt = function(x) {
     
     let i = 0;
